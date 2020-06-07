@@ -1,0 +1,39 @@
+<view class='container'>
+  <map class='map' latitude="{{latitude}}" longitude="{{longitude}}" polyline="{{polyline}}" markers="{{markers}}" show-location="true">
+  </map>
+  <view class='refresh'>
+    <image class='rimg' src='{{imgSrc}}' bindtap='getBusPos'></image>
+    <text class='rtxt' bindtap='getBusPos'>点我刷新</text>
+  </view>
+
+  <view class='info'>
+    <text> {{BusNo}}号线车牌号:</text>
+    <text>{{BusId}}</text>
+  </view>
+
+  <view class='timeinfo'>
+    <text>上次定位时间：</text>
+    <text>{{locTime}}</text>
+  </view>
+
+  <view class='schedule'>
+    <view class='endp'></view>
+    <view class='endp'></view>
+    <view class='timeLine'></view>
+  </view>
+
+  <view class='busPoints'>
+    <view class='whiteTer'></view>
+    <view wx:for="{{lineArry}}" wx:key="unique" class='whiteSmall'></view>
+    <view class='whiteTer'></view>
+    <view class='bluePoint' style='margin-top:{{iconMarginTop}}rpx'>
+      <image class = 'iconBus' src = '../../images/g7.png'></image>
+    </view>
+  </view>
+
+  <view class='busTxt'>
+    <text>公司</text>
+    <text wx:for="{{lineArry}}" wx:key="unique">{{item}}</text>
+    <text>起点</text>
+  </view>
+</view>

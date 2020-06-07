@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/driverLogin/driverLogin",
+    "pages/feedback/feedback",
+    "pages/localization/localization",
+    "pages/searchBus/searchBus"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f8992c",
+    "navigationBarTitleText": "Hi Bus",
+    "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "亲，我们需要您的位置信息哦。"
+    }
+  },
+  "tabBar": {
+    "backgroundColor": "#eba948",
+    "list": [
+      {
+        "pagePath": "pages/searchBus/searchBus",
+        "text": "站点查询",
+        "iconPath": "./images/search.png",
+        "selectedIconPath": "./images/search1.png"
+      },
+      {
+        "pagePath": "pages/localization/localization",
+        "text": "班车定位",
+        "iconPath": "./images/localization.png",
+        "selectedIconPath": "./images/localization1.png"
+      },
+      {
+        "pagePath": "pages/feedback/feedback",
+        "text": "Bus Go",
+        "iconPath": "./images/look.png",
+        "selectedIconPath": "./images/look1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "cloud":true
+}

@@ -1,0 +1,76 @@
+
+<view class="page">
+  <view class="nav">
+    <view class="nav-son {{shownavindex == 1? 'active' : ''}}" bindtap="listqy" data-nav="1">
+      <view class="content">{{city}}</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son borders {{shownavindex == 2? 'active' : ''}}" data-nav="2">
+      <view class="content">{{city1}}</view>
+    </view>
+    <view class="nav-son {{shownavindex == 3? 'active' : ''}}" data-nav="3">
+      <view class="content">{{model}}</view>
+    </view>
+  </view>
+  <view class="quyu {{qyopen ? 'slidown' : 'slidup'}} {{qyshow ? 'disappear':''}}">
+    <view class="qy quyu-left">
+      <view class="{{select1 == index ? 'current' : ''}}" wx:for="{{cityleft}}" bindtap="selectleft" data-city='{{index}}' wx:key="unique">
+        {{index}}
+      </view>
+    </view>
+    <view class="qy quyu-center">
+      <view class="{{select2 == index ? 'current2' : ''}}"
+            wx:for="{{citycenter}}"
+            bindtap="selectcenter"
+            data-city='{{index}}'
+            wx:key="unique">
+            {{index}}
+      </view>
+    </view>
+    <view class="qy quyu-right">
+      <view wx:for="{{cityright}}" wx:key="unique" bindtap='selectcity' data-city='{{index}}'>
+        {{item}}
+      </view>
+    </view>
+  </view>
+
+  <view class='container'>
+    <map class = "map"
+         id="myMap"
+         style="height:{{isfull ?'50%':'100%'}}"
+         latitude="{{latitude}}"
+         longitude="{{longitude}}"
+         markers="{{markers}}"
+         show-location ="true"
+         bindtap="hidebg"
+         bindmarkertap = "showCallout"
+         scale="{{scale}}">
+
+        <!-- all按钮 -->
+        <cover-view class="allbtn" bindtap="showAllMakers">
+          <cover-image style="" src="../../images/all.png"></cover-image>
+        </cover-view>
+
+        <!-- 搜索按钮 -->
+        <cover-view class="searchbtn" bindtap="tothere">
+          <cover-image style="" src="../../images/tothere.png"></cover-image>
+        </cover-view>
+
+        <!-- 将地图中心移动到当前定位点 -->
+        <cover-view class="location" bindtap="toPosition">
+          <cover-image style="" src="../../images/new_pos.png" ></cover-image>
+        </cover-view>
+
+        <!-- 个人中心图标 -->
+        <!-- <cover-view class="person" bindtap="toPerson">
+          <cover-image style="" src="../../images/driver.png"></cover-image>
+        </cover-view> -->
+
+    </map>
+
+  </view>
+
+ 
+  
+</view>
+

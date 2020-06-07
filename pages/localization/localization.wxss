@@ -1,0 +1,138 @@
+.map {
+  position: relative;
+  width: 61%;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.refresh {
+  position: fixed;
+  width: 39%;
+  right: 0;
+  top: 2%;
+}
+
+.rimg {
+  position: flex;
+  width: 160rpx;
+  height: 160rpx;
+  margin-left: 20%;
+}
+
+.rtxt {
+  position: fixed;
+  width: 100rpx;
+  top: 58rpx;
+  right: 103rpx;
+  font-size: 25rpx;
+  color: rgb(65, 29, 9);
+}
+
+.info {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 36%;
+  right: 0;
+  bottom: 20rpx;
+  font-size: 22rpx;
+  color: rgb(236, 115, 15);
+}
+
+.timeinfo {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 36%;
+  right: 0;
+  top: 180rpx;
+  font-size: 22rpx;
+  color: rgb(236, 115, 15);
+}
+
+.schedule {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  height: 800rpx;
+  right: 10rpx;
+  top: 260rpx;
+  /*border: solid 1rpx red;*/
+}
+
+.endp {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  background: orangered;
+}
+
+.timeLine {
+  position: fixed;
+  width: 30rpx;
+  background: orangered;
+  height: 770rpx;
+  margin-top: 15rpx;
+}
+
+.busPoints {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  height: 785rpx;
+  right: 10rpx;
+  top: 265rpx;
+  /*border: solid 1rpx blue;*/
+}
+
+.bluePoint {
+  position: fixed;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.iconBus {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.whiteTer {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background: white;
+}
+
+.whiteSmall {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background: rgb(224, 250, 248);
+  border: solid 2rpx wheat;
+}
+
+.busTxt {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 30%;
+  height: 790rpx;
+  right: 70rpx;
+  top: 264rpx;
+  /*border: solid 1rpx red;*/
+  font-size: 24rpx;
+  /*color:#01c1fc;*/
+}

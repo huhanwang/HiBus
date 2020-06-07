@@ -1,0 +1,24 @@
+<!--pages/driverLogin/driverLogin.wxml-->
+<view class='container'>
+	<image class='viewClass' style='width:100%;opacity:0.06;' mode='widthFix' src='../../images/start.png'></image>
+	<view class='btn'>
+		<button class='ansBtn button button-3d button-plain' bindtap='uploadPosition'>点我测试</button>
+	</view>
+	<text style="margin-top:50rpx;">{{tag}}</text>
+	<view class='btn'>
+		<button class='ansBtn button button-3d button-plain' bindtap='autoLog'>{{btnTxt}}</button>
+	</view>
+	<!-- <view class="section">
+		<input class="input" bindinput="getInput" placeholder="{{userMsg}}" />
+	</view> -->
+	<!--户型  -->
+	<picker name="picker_hx" class="cybm_pic_1" value="{{pic_array[hx_index].id}}" data-selecthx="{{pic_array[hx_index].name}}" range="{{pic_array}}" range-key="{{'name'}}" bindchange="bindPickerChange_hx">
+		<view class="picker"> {{pic_array[hx_index].name}} </view>
+	</picker>
+	<view class='btn'>
+		<button class='ansBtn button button-3d button-plain' bindtap="uploadUserMsg" >给乘客捎句话</button>
+	</view>
+  <text style="margin-top:100rpx;">留言板</text>
+	<view class="divLine"></view>
+	<text class = 'msg'>{{allMsg}}</text>
+</view>
